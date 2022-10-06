@@ -3,9 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
-  AiFillTwitterCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
 } from "react-icons/ai";
 
 export default function Home() {
@@ -17,40 +16,70 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
-        <section className='min-h-screen'>
+      <main className='bg-white md:px-5 xl:px-20'>
+        <section className='md:min-h-screen 2xl:min-h-full'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl'>Ahmet</h1>
+            {/*<h1 className='text-xl'>Ahmet</h1>*/}
             <ul className='flex items-center' >
               <li><BsFillMoonStarsFill className='cursor-pointer text-2xl' /></li>
               <li className='bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>Resume</li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
-            <h2 className="text-5xl py-2">Ahmet Topal</h2>
-            <h3 className="text-2xl py-2">Full Stack Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">Hello Im Full stack Developer</p>
+          <div className='flex items-center justify-center flex-col-reverse md:flex-row'>
+            <div className='text-center p-10'>
+              <h2 className="text-5xl xl:text-7xl py-2">Ahmet Topal</h2>
+              <h3 className="text-2xl xl:text-4xl py-2">Full Stack Developer</h3>
+              <p className="text-md xl:text-lg py-5 leading-8 text-gray-800">Hello Im Full stack Developer</p>
+            </div>
+            <div className="rounded-full w-40 h-40 relative overflow-hidden md:h-56 md:w-56 xl:h-72 xl:w-72 bg-slate-600">
+              <Image src="https://picsum.photos/200" layout="fill" objectFit="cover" />
+            </div>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillTwitterCircle />
+          <div className="text-5xl xl:text-7xl flex justify-center gap-16 py-3 xl:py-10 text-gray-600">
             <AiFillLinkedin />
-            <AiFillYoutube />
+            <a href='https://github.com/ahmettopal' target="_blank"><AiFillGithub /></a>
           </div>
         </section>
-
+        <section>
+          <div className="gap-2 md:gap-4 justify-center grid grid-cols-3 md:grid-cols-5">
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl">
+              <Image src="https://asset.brandfetch.io/idbkMiejO4/idee5k_Xjl.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
+                React.js
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
+              <Image src="https://asset.brandfetch.io/idykQnbEJm/id5aWD1hI3.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg  font-medium ">
+                Nest.js
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
+              <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg  font-medium  ">
+                Firebase
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
+              <Image src="https://asset.brandfetch.io/idBBE3_R9e/idGgvHlHHY.jpeg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg  font-medium ">
+                Prisma.io
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
+              <Image src="https://asset.brandfetch.io/idBdG8DdKe/idSEhEKy8_.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
+                Mysql
+              </h3>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <h4>
+          Powered by{' '}Ahmet Topal
+        </h4>
       </footer>
     </div>
   )
