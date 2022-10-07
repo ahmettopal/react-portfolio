@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
+import { Navbar, Footer } from '../components';
 
 export default function Home() {
   return (
@@ -18,51 +18,74 @@ export default function Home() {
 
       <main className='bg-white md:px-5 xl:px-20'>
         <section className='md:min-h-screen 2xl:min-h-full'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            {/*<h1 className='text-xl'>Ahmet</h1>*/}
-            <ul className='flex items-center' >
-              <li><BsFillMoonStarsFill className='cursor-pointer text-2xl' /></li>
-              <li className='bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>Resume</li>
-            </ul>
-          </nav>
+          <Navbar />
           <div className='flex items-center justify-center flex-col-reverse md:flex-row'>
             <div className='text-center p-10'>
-              <h2 className="text-5xl xl:text-7xl py-2">Ahmet Topal</h2>
-              <h3 className="text-2xl xl:text-4xl py-2">Full Stack Developer</h3>
-              <p className="text-md xl:text-lg py-5 leading-8 text-gray-800">Hello Im Full stack Developer</p>
+              <h2 className="text-4xl md:text-5xl 2xl:text-7xl py-2">Ahmet Topal</h2>
+              <h3 className="text-xl md:text-3xl 2xl:text-4xl py-2">Full Stack Developer</h3>
+              <p className="text-md 2xl:text-lg py-5 leading-8 text-gray-1000">Hello Im Full stack Developer</p>
             </div>
-            <div className="rounded-full w-40 h-40 relative overflow-hidden md:h-56 md:w-56 xl:h-72 xl:w-72 bg-slate-600">
+            <div className="rounded-full w-40 h-40 relative overflow-hidden md:h-56 md:w-56 2xl:h-72 2xl:w-72 bg-slate-600">
               <Image src="https://picsum.photos/200" layout="fill" objectFit="cover" />
             </div>
           </div>
-          <div className="text-5xl xl:text-7xl flex justify-center gap-16 py-3 xl:py-10 text-gray-600">
+          <div className="text-5xl 2xl:text-7xl flex justify-center gap-16 py-3 2xl:py-10 text-gray-600">
             <AiFillLinkedin />
             <a href='https://github.com/ahmettopal' target="_blank"><AiFillGithub /></a>
           </div>
         </section>
         <section>
-          <div className="gap-2 md:gap-4 justify-center grid grid-cols-3 md:grid-cols-5">
+          <div className="flex justify-center">
+            <h3 className="text-sm sm:text-md md:text-2xl font-bold p-2">
+              Skills
+            </h3>
+          </div>
+          <div className="gap-2 md:gap-4 justify-center grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             <div className="text-center shadow-lg p-2 md:p-5 rounded-xl">
               <Image src="https://asset.brandfetch.io/idbkMiejO4/idee5k_Xjl.svg" width={'100%'} height={'100%'} />
               <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
                 React.js
               </h3>
             </div>
+            {/*<div className="text-center shadow-lg p-2 md:p-5 rounded-xl">
+              <Image src="https://asset.brandfetch.io/id6huW-kis/idywy-7zdx.png" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg  font-medium ">
+                Chakra-ui
+              </h3>
+            </div>*/}
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
+              <Image src="https://asset.brandfetch.io/idaYUyxpBn/idCVRRQj_t.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
+                Node.js
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
+              <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
+                Express.js
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
+              <Image src="https://asset.brandfetch.io/idTpJSSBPD/idQodxJ-_j.svg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium  ">
+                React Native
+              </h3>
+            </div>
             <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
               <Image src="https://asset.brandfetch.io/idykQnbEJm/id5aWD1hI3.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg  font-medium ">
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
                 Nest.js
               </h3>
             </div>
             <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
               <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg  font-medium  ">
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium  ">
                 Firebase
               </h3>
             </div>
             <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
               <Image src="https://asset.brandfetch.io/idBBE3_R9e/idGgvHlHHY.jpeg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg  font-medium ">
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
                 Prisma.io
               </h3>
             </div>
@@ -72,15 +95,23 @@ export default function Home() {
                 Mysql
               </h3>
             </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
+              <Image src="https://asset.brandfetch.io/idjSeCeMle/id4mFA4dMg.png" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
+                Postgresql
+              </h3>
+            </div>
+            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
+              <Image src="https://asset.brandfetch.io/idMNEQh7-0/idniFvnRIg.jpeg" width={'100%'} height={'100%'} />
+              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
+                Tailwind
+              </h3>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className={styles.footer}>
-        <h4>
-          Powered by{' '}Ahmet Topal
-        </h4>
-      </footer>
-    </div>
+      <Footer />
+    </div >
   )
 }
