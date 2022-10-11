@@ -18,7 +18,7 @@ const Greetings = () => {
                     <Image src="https://picsum.photos/200" layout="fill" objectFit="cover" />
                 </div>
             </div>
-            <div className="text-5xl 2xl:text-7xl flex justify-center gap-16 py-3 2xl:py-10 text-gray-600">
+            <div className="text-5xl 2xl:text-7xl flex justify-center gap-16 py-10 2xl:py-10 text-gray-600">
                 <AiFillLinkedin />
                 <a href='https://github.com/ahmettopal' target="_blank"><AiFillGithub /></a>
             </div>

@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import { Navbar, Footer, Greetings } from '../components';
+import { Navbar, Footer, Greetings, Skills } from '../components';
 
 export default function Home() {
   return (
@@ -12,85 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white md:px-5 xl:px-20'>
-        <section className='md:min-h-screen 2xl:min-h-full'>
+      <main className='bg-white px-5'>
+        <section className='md:min-h-screen 2xl:min-h-max'>
           <Navbar />
           <Greetings />
         </section>
-        <section>
-          <div className="flex justify-center">
-            <h3 className="text-sm sm:text-md md:text-2xl font-bold p-2">
-              Skills
-            </h3>
-          </div>
-          <div className="gap-2 md:gap-4 justify-center grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl">
-              <Image src="https://asset.brandfetch.io/idbkMiejO4/idee5k_Xjl.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                React.js
-              </h3>
-            </div>
-            {/*<div className="text-center shadow-lg p-2 md:p-5 rounded-xl">
-              <Image src="https://asset.brandfetch.io/id6huW-kis/idywy-7zdx.png" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg  font-medium ">
-                Chakra-ui
-              </h3>
-            </div>*/}
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
-              <Image src="https://asset.brandfetch.io/idaYUyxpBn/idCVRRQj_t.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Node.js
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
-              <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Express.js
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
-              <Image src="https://asset.brandfetch.io/idTpJSSBPD/idQodxJ-_j.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium  ">
-                React Native
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
-              <Image src="https://asset.brandfetch.io/idykQnbEJm/id5aWD1hI3.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Nest.js
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
-              <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium  ">
-                Firebase
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
-              <Image src="https://asset.brandfetch.io/idBBE3_R9e/idGgvHlHHY.jpeg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Prisma.io
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl ">
-              <Image src="https://asset.brandfetch.io/idBdG8DdKe/idSEhEKy8_.svg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Mysql
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
-              <Image src="https://asset.brandfetch.io/idjSeCeMle/id4mFA4dMg.png" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Postgresql
-              </h3>
-            </div>
-            <div className="text-center shadow-lg p-2 md:p-5 rounded-xl  ">
-              <Image src="https://asset.brandfetch.io/idMNEQh7-0/idniFvnRIg.jpeg" width={'100%'} height={'100%'} />
-              <h3 className="text-xs sm:text-sm md:text-lg font-medium ">
-                Tailwind
-              </h3>
-            </div>
-          </div>
+        <section className='flex justify-center'>
+          <Skills />
         </section>
       </main>
 
