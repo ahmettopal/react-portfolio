@@ -5,6 +5,7 @@ import {
 
 export const fullName = "Ahmet Topal";
 export const siteUrl = "https://ahmettopal.dev";
+export const resume = '/assets/resume/sample.pdf';
 
 export const social_icons = [
     {

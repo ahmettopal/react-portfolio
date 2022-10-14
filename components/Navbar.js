@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillMoonFill, BsSun } from "react-icons/bs";
+import { resume } from "../constants";
 
 export const Navbar = ({ onMode = () => { }, darkMode }) => {
     return (
@@ -11,7 +12,14 @@ export const Navbar = ({ onMode = () => { }, darkMode }) => {
                         :
                         <BsFillMoonFill className='cursor-pointer text-2xl' />}
                     </li>
-                    <li className='bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>Resume</li>
+                    <li className='bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>
+                        <a
+                            href={resume}
+                            alt="resume"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Resume</a>
+                    </li>
                 </ul>
             </nav>
         </div>
