@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "BungeeShade";
+  src: url('../public/assets/fonts/BungeeShade-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url('../public/assets/fonts/SourceCodePro-VariableFont_wght.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;

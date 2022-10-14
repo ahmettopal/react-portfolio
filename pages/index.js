@@ -8,7 +8,6 @@ export default function Home() {
 
   const onDarkMode = () => {
     setDarkMode(!darkMode);
-    console.log(darkMode);
   };
 
   return (
@@ -19,12 +18,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-5 dark:bg-slate-600'>
-        <section className='md:min-h-screen 2xl:min-h-max'>
-          <Navbar onMode={onDarkMode} />
+      <main>
+        <section className='md:min-h-screen 2xl:min-h-max bg-zinc-100 dark:bg-zinc-800'>
+          <Navbar onMode={onDarkMode} darkMode={darkMode} />
           <Greetings />
         </section>
-        <section className='flex justify-center'>
+        <section className='flex justify-center dark:bg-zinc-700'>
           <Skills />
         </section>
       </main>
