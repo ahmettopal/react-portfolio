@@ -127,3 +127,22 @@
     filter: invert(1);
   }
 }
+
+.profile_image {
+  animation: profile_animate 3s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+  }
+  50% {
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
