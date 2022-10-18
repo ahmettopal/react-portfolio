@@ -13,7 +13,7 @@ const Greetings = () => {
                 <div className='text-start p-10'>
                     <h2 className="text-2xl md:text-5xl 2xl:text-7xl py-2 dark:text-teal-100 font-sourceCodePro">Ahmet Topal</h2>
                     <h3 className="text-xl md:text-3xl 2xl:text-4xl py-2 dark:text-cyan-50">- Full Stack Developer</h3>
-                    <p className="text-md 2xl:text-lg py-5 max-w-sm leading-8 text-gray-900 dark:text-cyan-50">
+                    <p className="text-md 2xl:text-lg md:py-5 max-w-sm leading-8 text-gray-900 dark:text-cyan-50">
                         &#60; Hello this is Ahmet. I am working as a full stack web and mobile developer.
                         Below you can find the technologies I use &#47;&#62;
                     </p>
@@ -22,7 +22,7 @@ const Greetings = () => {
                     <Image src="https://picsum.photos/200" layout="fill" objectFit="cover" />
                 </div>
             </div>
-            <div className="text-4xl 2xl:text-7xl flex justify-center gap-16 py-10 2xl:py-10 text-gray-600 dark:text-slate-200">
+            <div className="text-4xl 2xl:text-7xl flex justify-center gap-16 md:py-10 2xl:py-10 text-gray-600 dark:text-slate-200">
                 <a href='https://github.com/ahmettopal' target="_blank"><AiFillGithub /></a>
                 <AiFillLinkedin />
             </div>
