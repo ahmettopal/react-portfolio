@@ -14,19 +14,19 @@ const Footer = ({ ...props }) => {
                         feel free to contact me.
                     </p>
                     <button className="mt-3 hover:bg-slate-200 rounded-md p-1">
-                        <a href='https://github.com/ahmettopal/react-portfolio' target="_blank">
+                        <a href='https://github.com/ahmettopal/react-portfolio' target="_blank" rel="noopener noreferrer">
                             Source Code
                         </a>
                     </button>
                 </div>
                 <div className="text-center font-bold text-gray-400 text-sm">
                     <div className="text-2xl 2xl:text-5xl flex justify-center gap-4 py-1 text-gray-600 dark:text-slate-200">
-                        <a href='https://github.com/ahmettopal' target="_blank"><AiFillGithub /></a>
-                        <AiFillLinkedin />
+                        <a href='https://github.com/ahmettopal' target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
+                        <a href='https://www.linkedin.com/in/ahmetopal' target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
                     </div>
                     <p>© {new Date().getFullYear()} Ahmet Topal</p>
                     <p className="hover:underline decoration-1">
-                        <a href="mailto:ahmettopal9816@gmail.com">ahmettopal9816@gmail.com</a>
+                        <a href="mailto:ahmettopal9816@gmail.com" rel="noopener noreferrer">ahmettopal9816@gmail.com</a>
                     </p>
                 </div>
             </footer>

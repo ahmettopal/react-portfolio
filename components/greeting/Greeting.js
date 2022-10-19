@@ -8,23 +8,23 @@ import { BsMouse } from "react-icons/bs";
 
 const Greetings = () => {
     return (
-        <div>
-            <div className='flex items-center justify-center flex-col-reverse md:flex-row md:space-x-15'>
-                <div className='text-start p-10'>
-                    <h2 className="text-2xl md:text-5xl 2xl:text-7xl py-2 dark:text-teal-100 font-sourceCodePro">Ahmet Topal</h2>
-                    <h3 className="text-xl md:text-3xl 2xl:text-4xl py-2 dark:text-cyan-50">- Full Stack Developer</h3>
-                    <p className="text-md 2xl:text-lg md:py-5 max-w-sm leading-8 text-gray-900 dark:text-cyan-50">
+        <div className="mt-20 2xl:mt-28">
+            <div className='flex items-center justify-center flex-col-reverse md:flex-row md:space-x-15 lg:space-x-28'>
+                <div className='text-start p-8'>
+                    <p className="text-2xl md:text-6xl 2xl:text-9xl py-2 dark:text-teal-100 font-sourceCodePro">Ahmet Topal</p>
+                    <p className="text-xl md:text-4xl 2xl:text-7xl py-2 dark:text-cyan-50">- Full Stack Developer</p>
+                    <p className="text-md 2xl:text-5xl md:py-5 max-w-sm 2xl:max-w-3xl leading-8 text-gray-900 dark:text-cyan-50">
                         &#60; Hello this is Ahmet. I am working as a full stack web and mobile developer.
                         Below you can find the technologies I use &#47;&#62;
                     </p>
                 </div>
-                <div className="rounded-full w-40 h-40 relative overflow-hidden md:h-56 md:w-56 2xl:h-72 2xl:w-72">
-                    <Image src="https://picsum.photos/200" layout="fill" objectFit="cover" />
+                <div className="relative overflow-hidden rounded-full w-40 h-40 md:h-56 md:w-56 2xl:h-96 2xl:w-96">
+                    <Image src="https://picsum.photos/200" layout="fill" objectFit="cover" alt="greeting" />
                 </div>
             </div>
-            <div className="text-4xl 2xl:text-7xl flex justify-center gap-16 md:py-10 2xl:py-10 text-gray-600 dark:text-slate-200">
-                <a href='https://github.com/ahmettopal' target="_blank"><AiFillGithub /></a>
-                <AiFillLinkedin />
+            <div className="flex justify-center text-4xl 2xl:text-7xl gap-16 md:py-10 2xl:py-36 text-gray-600 dark:text-slate-200">
+                <a href='https://github.com/ahmettopal' target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
+                <a href='https://www.linkedin.com/in/ahmetopal' target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
             </div>
             <div className="flex justify-center p-10 dark:text-slate-200">
                 <BsMouse size={25} className="animate-bounce" />
