@@ -3,6 +3,7 @@ import {
     AiFillGithub,
     AiFillLinkedin,
 } from "react-icons/ai";
+import NextLink from "next/link";
 
 const Footer = ({ ...props }) => {
     return (
@@ -18,6 +19,11 @@ const Footer = ({ ...props }) => {
                             Source Code
                         </a>
                     </button>
+                    <NextLink href={"/contact"}>
+                        <p>
+                            Contact
+                        </p>
+                    </NextLink>
                 </div>
                 <div className="text-center font-bold text-gray-400 text-sm">
                     <div className="text-2xl 2xl:text-5xl flex justify-center gap-4 py-1 text-gray-600 dark:text-slate-200">
