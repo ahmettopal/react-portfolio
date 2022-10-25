@@ -66,3 +66,7 @@ export const techStack = {
         },
     ],
 };
+
+export const contactillustations = {
+    svg: "/assets/icons/contact.svg",
+}

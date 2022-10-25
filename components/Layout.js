@@ -20,8 +20,8 @@ const Layout = ({ children, ...props }) => {
             <div className='md:min-h-screen 2xl:min-h-screen bg-zinc-100 dark:bg-zinc-800'>
                 <Navbar onMode={onDarkMode} darkMode={darkMode} />
                 {children}
+                <Footer />
             </div>
-            <Footer />
         </div >
     );
 };
