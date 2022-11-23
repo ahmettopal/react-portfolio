@@ -8,7 +8,7 @@ import { BsMouse } from "react-icons/bs";
 
 const Greetings = () => {
     return (
-        <div className="mt-20 2xl:mt-28">
+        <div className="md:mt-20 2xl:mt-28">
             <div className='flex items-center justify-center flex-col-reverse md:flex-row md:space-x-15 lg:space-x-28'>
                 <div className='text-start p-8'>
                     <p className="text-2xl md:text-6xl 2xl:text-9xl py-2 dark:text-teal-100 font-sourceCodePro">Ahmet Topal</p>
