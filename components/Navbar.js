@@ -11,23 +11,11 @@ export const Navbar = ({ onMode = () => { }, darkMode }) => {
                     {darkMode === true ?
                         <BsSun className='cursor-pointer text-2xl text-white' />
                         :
-                        <BsFillMoonFill className='cursor-pointer text-2xl' />}
+                        <BsFillMoonFill className='cursor-pointer text-2xl text-black' />}
                 </li>
-                <li className='bg-white dark:bg-zinc-700 text-black dark:text-white px-2 py-2 rounded-md ml-3 shadow-md'>
-                    <NextLink href={"/"}>
-                        Home
-                    </NextLink>
-                </li>
-                <li className='bg-white dark:bg-zinc-700 text-black dark:text-white px-2 py-2 rounded-md ml-3 shadow-md'>
-                    <NextLink href={"/portfolio"}>
-                        Portfolio
-                    </NextLink>
-                </li>
-                <li className='bg-white dark:bg-zinc-700 text-black dark:text-white px-2 py-2 rounded-md ml-3 shadow-md'>
-                    <NextLink href={"/contact"}>
-                        Contact
-                    </NextLink>
-                </li>
+                <NavItem to="/" text="Home" />
+                <NavItem to="/portfolio" text="Portfolio" />
+                <NavItem to="/contact" text="Contact" />
                 <li className='bg-white dark:bg-zinc-700 text-black dark:text-white px-2 py-2 rounded-md ml-3 shadow-md'>
                     <a
                         href={resume}
@@ -42,3 +30,13 @@ export const Navbar = ({ onMode = () => { }, darkMode }) => {
 };
 
 export default Navbar;
+
+const NavItem = ({ to, text }) => {
+    return (
+        <li className='bg-white dark:bg-zinc-700 text-black dark:text-white px-2 py-2 rounded-md ml-3 shadow-md'>
+            <NextLink href={to}>
+                {text}
+            </NextLink>
+        </li>
+    )
+}

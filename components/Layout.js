@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from 'next/head';
 import { Navbar, Footer } from '.';
 
 const Layout = ({ children, ...props }) => {
     const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        window.matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', event => {
+                event.matches ? setDarkMode(true) : setDarkMode(false);
+            });
+    }, []);
+
+    useEffect(() => {
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        darkThemeMq.matches ? setDarkMode(true) : setDarkMode(false)
+    }, []);
 
     const onDarkMode = () => {
         setDarkMode(!darkMode);
