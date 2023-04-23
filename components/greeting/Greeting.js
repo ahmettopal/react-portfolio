@@ -1,10 +1,7 @@
 import React from "react";
 import Image from 'next/image';
-import {
-    AiFillGithub,
-    AiFillLinkedin,
-} from "react-icons/ai";
 import { BsMouse } from "react-icons/bs";
+import { SocialMediaCard } from "..";
 
 const Greetings = () => {
     return (
@@ -23,8 +20,7 @@ const Greetings = () => {
                 </div>
             </div>
             <div className="flex justify-center text-4xl 2xl:text-7xl gap-16 md:py-10 2xl:py-36 text-gray-600 dark:text-slate-200">
-                <a href='https://github.com/ahmettopal' target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
-                <a href='https://www.linkedin.com/in/ahmetopal' target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
+                <SocialMediaCard />
             </div>
             <div className="flex justify-center p-10 dark:text-slate-200">
                 <BsMouse size={25} className="animate-bounce" />

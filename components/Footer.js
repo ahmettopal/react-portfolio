@@ -1,9 +1,6 @@
 import React from "react";
-import {
-    AiFillGithub,
-    AiFillLinkedin,
-} from "react-icons/ai";
 import NextLink from "next/link";
+import { SocialMediaCard } from ".";
 
 const Footer = ({ ...props }) => {
     return (
@@ -34,8 +31,7 @@ const Footer = ({ ...props }) => {
                 </div>
                 <div className="text-center font-bold text-gray-400 text-sm">
                     <div className="text-2xl 2xl:text-5xl flex justify-center gap-4 py-1 text-gray-600 dark:text-slate-200">
-                        <a href='https://github.com/ahmettopal' target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
-                        <a href='https://www.linkedin.com/in/ahmetopal' target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
+                        <SocialMediaCard />
                     </div>
                     <p>© {new Date().getFullYear()} Ahmet Topal</p>
                     <p className="hover:underline decoration-1">
