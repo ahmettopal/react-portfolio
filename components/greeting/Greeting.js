@@ -8,9 +8,9 @@ const Greetings = () => {
         <div className="md:mt-20 2xl:mt-28">
             <div className='flex items-center justify-center flex-col-reverse md:flex-row md:space-x-15 lg:space-x-28'>
                 <div className='text-start p-8'>
-                    <p className="text-2xl md:text-6xl 2xl:text-9xl py-2 text-gray-900 dark:text-teal-100 font-sourceCodePro">Ahmet Topal</p>
-                    <p className="text-xl md:text-4xl 2xl:text-7xl py-2 text-gray-900 dark:text-cyan-50">- Full Stack Developer</p>
-                    <p className="text-md 2xl:text-5xl md:py-5 max-w-sm 2xl:max-w-3xl leading-8 text-gray-900 dark:text-cyan-50">
+                    <p className="text-2xl md:text-6xl 2xl:text-9xl py-2 text-gray-900 dark:text-gray-400 font-sourceCodePro">Ahmet Topal</p>
+                    <p className="text-xl md:text-4xl 2xl:text-7xl py-2 text-gray-900 dark:text-gray-300">- Software Developer</p>
+                    <p className="text-md 2xl:text-5xl md:py-5 max-w-sm 2xl:max-w-3xl leading-8 text-gray-900 dark:text-gray-300">
                         &#60; Hello this is Ahmet. I am working as a full stack web and mobile developer.
                         Below you can find the technologies I use &#47;&#62;
                     </p>
