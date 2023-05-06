@@ -4,7 +4,7 @@ import { PortfolioData } from "../constants/data";
 
 const portfolio = () => {
     return (
-        <div className="dark:bg-zinc-700 w-screen">
+        <div className="dark:bg-zinc-700">
             <Title title="Projects" />
             <div className="flex flex-col items-center p-5">
                 {PortfolioData.map((item, index) => {
