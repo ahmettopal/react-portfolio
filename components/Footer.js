@@ -12,24 +12,12 @@ const Footer = ({ ...props }) => {
                         feel free to contact me.
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-4">
-                        <button className="mt-3 hover:bg-slate-200 rounded-md">
-                            <NextLink href={"/"}>
-                                Home
-                            </NextLink>
-                        </button>
-                        <button className="mt-3 hover:bg-slate-200 rounded-md">
-                            <NextLink href={"/contact"}>
-                                Contact
-                            </NextLink>
-                        </button>
-                        <button className="mt-3 hover:bg-slate-200 rounded-md">
-                            <a href='https://github.com/ahmettopal/react-portfolio' target="_blank" rel="noopener noreferrer">
-                                Source Code
-                            </a>
-                        </button>
+                        <FooterItem href={"/"} text="Home" />
+                        <FooterItem href={"/contact"} text="Contact" />
+                        <FooterItem href='https://github.com/ahmettopal/react-portfolio' text="Source Code" />
                     </div>
                 </div>
-                <div className="text-center font-bold text-gray-400 text-sm">
+                <div className="text-center font-bold text-gray-400 text-sm mt-5 md:mt-0">
                     <div className="text-2xl 2xl:text-5xl flex justify-center gap-4 py-1 text-gray-600 dark:text-slate-200">
                         <SocialMediaCard />
                     </div>
@@ -44,3 +32,13 @@ const Footer = ({ ...props }) => {
 };
 
 export default Footer;
+
+const FooterItem = ({ href = "", text = "" }) => {
+    return (
+        <button className="mt-3 hover:bg-slate-200 rounded-md">
+            <NextLink href={href}>
+                {text}
+            </NextLink>
+        </button>
+    )
+}
