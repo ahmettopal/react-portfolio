@@ -1,13 +1,11 @@
 import React from "react";
-import { PortfolioCard } from "../components";
+import { PortfolioCard, Title } from "../components";
 import { PortfolioData } from "../constants/data";
 
 const portfolio = () => {
     return (
         <div className="dark:bg-zinc-700 w-screen">
-            <div className="text-center font-bold">
-                <p className="text-xl md:text-4xl 2xl:text-7xl py-2 dark:text-cyan-50">Projects</p>
-            </div>
+            <Title title="Projects" />
             <div className="flex flex-col items-center p-5">
                 {PortfolioData.map((item, index) => {
                     return (
