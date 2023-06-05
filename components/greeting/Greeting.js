@@ -12,7 +12,7 @@ const Greetings = () => {
                     <p className="text-xl md:text-4xl 2xl:text-7xl py-2 text-gray-900 dark:text-gray-300">- Software Developer</p>
                     <p className="text-md 2xl:text-5xl md:py-5 max-w-sm 2xl:max-w-3xl leading-8 text-gray-900 dark:text-gray-300">
                         &#60; Hello this is Ahmet. I am working as a full stack web and mobile developer.
-                        Below you can find the technologies I use &#47;&#62;
+                        You can find the technologies I use below. &#47;&#62;
                     </p>
                 </div>
                 <div className="relative overflow-hidden rounded-full w-40 h-40 md:h-56 md:w-56 2xl:h-96 2xl:w-96">
