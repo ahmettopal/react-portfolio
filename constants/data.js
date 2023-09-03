@@ -7,6 +7,8 @@ export const PortfolioData = [
         title: "Portfolio 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         webLink: "",
+        androidLink: "",
+        iosLink: "",
         tech: [getIconPath("react-native.svg"), getIconPath("firebase.svg")],
     },
     {
@@ -15,6 +17,8 @@ export const PortfolioData = [
         title: "Portfolio 2",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         webLink: "",
+        androidLink: "",
+        iosLink: "",
         tech: [getIconPath("react.svg"), getIconPath("chakra-icon.svg"), getIconPath("firebase.svg")],
     },
     {
@@ -23,6 +27,8 @@ export const PortfolioData = [
         title: "Portfolio 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         webLink: "",
+        androidLink: "",
+        iosLink: "",
         tech: [getIconPath("react.svg")]
     },
 ];

@@ -8,5 +8,7 @@ export { default as PortfolioCard } from "./cards/PortfolioCard";
 export { default as SocialMediaCard } from "./cards/SocialMediaCard";
 export { default as Title } from "./Title";
 export { default as NavComponent } from "./navbar/NavComponent";
+export { default as Modal } from "./modals/Modal";
+export { default as PortfolioModal } from "./modals/PortfolioModal";
 
 
