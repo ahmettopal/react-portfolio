@@ -1,4 +1,5 @@
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+import { getIconPath } from "../helpers";
 
 export const fullName = "Ahmet Topal";
 export const siteUrl = "https://ahmettopal.dev";
@@ -26,51 +27,51 @@ export const techStack = {
     main: [
         {
             name: "React.js",
-            svg: "/assets/icons/react.svg",
+            svg: getIconPath("react.svg"),
         },
         {
             name: "Node.js",
-            svg: "/assets/icons/node-js.svg",
+            svg: getIconPath("node-js.svg"),
         },
         {
             name: "Express.js",
-            svg: "/assets/icons/express.svg",
+            svg: getIconPath("express.svg"),
         },
         {
             name: "React Native",
-            svg: "/assets/icons/react-native.svg",
+            svg: getIconPath("react-native.svg"),
         },
         {
             name: "Nest.js",
-            svg: "/assets/icons/nestjs.svg",
+            svg: getIconPath("nestjs.svg"),
         },
         {
             name: "Firebase",
-            svg: "/assets/icons/firebase.svg",
+            svg: getIconPath("firebase.svg"),
         },
         {
             name: "Tailwind CSS",
-            svg: "/assets/icons/tailwind.svg",
+            svg: getIconPath("tailwind.svg"),
         },
         {
             name: "prisma.io",
-            svg: "/assets/icons/prisma.svg",
+            svg: getIconPath("prisma.svg"),
         },
         {
             name: "MySQL",
-            svg: "/assets/icons/mysql.svg",
+            svg: getIconPath("mysql.svg"),
         },
         {
             name: "PostgreSQL",
-            svg: "/assets/icons/postgresql.svg",
+            svg: getIconPath("postgresql.svg"),
         },
         {
             name: "Chakra-ui",
-            svg: "/assets/icons/chakra-icon.svg",
+            svg: getIconPath("chakra-icon.svg"),
         },
     ],
 };
 
 export const contactillustations = {
-    svg: "/assets/icons/contact.svg",
+    svg: getIconPath("contact.svg"),
 };
