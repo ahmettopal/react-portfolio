@@ -1,19 +1,22 @@
-import React from 'react'
-import {
-    AiFillGithub,
-    AiFillLinkedin,
-    AiFillInstagram
-} from "react-icons/ai";
-import { instagramUrl, linkedinUrl, githubUrl } from '../../constants'
+import React from "react";
+import { social_icons } from "../../constants";
 
 const SocialMediaCard = () => {
     return (
         <>
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a>
-            <a href={instagramUrl} target="_blank" rel="noopener noreferrer"><AiFillInstagram /></a>
+            {social_icons.map((data, index) => {
+                return (
+                    <a
+                        key={index}
+                        href={data.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {data.icon}
+                    </a>);
+            })}
         </>
-    )
-}
+    );
+};
 
-export default SocialMediaCard
+export default SocialMediaCard;

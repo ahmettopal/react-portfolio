@@ -1,11 +1,8 @@
-import {
-    AiFillGithub,
-    AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 
 export const fullName = "Ahmet Topal";
 export const siteUrl = "https://ahmettopal.dev";
-export const resume = '/assets/resume/sample.pdf';
+export const resume = "/assets/resume/sample.pdf";
 export const instagramUrl = "https://www.instagram.com/ahmttopall/";
 export const linkedinUrl = "https://www.linkedin.com/in/ahmetopal";
 export const githubUrl = "https://github.com/ahmettopal";
@@ -13,12 +10,16 @@ export const githubUrl = "https://github.com/ahmettopal";
 export const social_icons = [
     {
         icon: <AiFillGithub />,
-        url: "https://github.com/ahmettopal",
+        url: githubUrl,
     },
     {
         icon: <AiFillLinkedin />,
-        url: "https://github.com/ahmettopal",
-    }
+        url: linkedinUrl,
+    },
+    {
+        icon: <AiFillInstagram />,
+        url: instagramUrl,
+    },
 ];
 
 export const techStack = {
@@ -72,4 +73,4 @@ export const techStack = {
 
 export const contactillustations = {
     svg: "/assets/icons/contact.svg",
-}
+};
